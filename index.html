@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+<div class="h d-flex justify-content-center">
+  <div class="header position-absolute top-0 mt-5">SPLITTER</div>
+  <div class="bottom d-flex flex-row bg-light p-4 rounded-2">
+    <div class="left-container d-flex flex-column w-50">
+      <div>
+        <p class="mb-1">Bill</p>
+        <input type="text" class="w-75 text-end bill-input" value="75">
+      </div>
+
+      <div class="mt-4">
+        <div class="mb-2">Select Tip %</div>
+        <div class="row gap-2 container">
+          <div class="col-4 tip w-25 p-1 rounded-1 text-light text-center tip5">5%</div>
+          <div class="col-4 tip w-25 p-1 rounded-1 text-light text-center tip10">10%</div>
+          <div class="col-4 tip w-25 p-1 rounded-1 text-light text-center tip15">15%</div>  
+          <div class="col-4 tip w-25 p-1 rounded-1 text-light text-center tip25">25%</div>
+          <div class="col-4 tip w-25 p-1 rounded-1 text-light text-center tip50">50%</div>
+          <input type="text" class="col-4 w-25 rounded-1 text-end tip-input"></input>
+        </div>
+      </div>
+
+      <div class="mt-5">
+       <div class="d-flex justify-content-between w-75">
+        <p class="mb-1 num-p">Number of People</p>
+        <div class="d-none num-p">Can't be zero</div>
+       </div>
+        <input type="text" class="w-75 text-end bill-input num-input" value="2">
+      </div>
+    </div>
+    <div class="right-container p-5 rounded-2 text-light w-50">
+      <div class="mb-5 d-flex justify-content-between">
+        <div class="w-50 amount">Tip Amount /person</div>
+        <div class="fs-2 dollar tip-amount">$0.00</div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="w-25 amount">Total /person</div>
+        <div class="fs-2 dollar tip-total">$0.00</div>
+      </div>
+      <div class="btn w-100 mt-5">RESET</div>
+    </div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
